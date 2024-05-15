@@ -1,0 +1,215 @@
+/****************************************************************************/
+/*                          GENERAL STYLING                                 */
+/****************************************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Workbench&display=swap");
+
+:root {
+  --init-col: #101010;
+  --sec-col: #f1f1f1;
+  --accent-col: #a30000;
+  --special-font: "Workbench", sans-serif;
+  --bord: 1px solid green;
+  --bord-rad: 10px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--init-col);
+}
+
+/****************************************************************************/
+/*                     NAVIGATION / HEADER STYLING                          */
+/****************************************************************************/
+
+nav {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav ul li {
+  width: 150px;
+  height: 40px;
+  list-style-type: none;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  transition: 900ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--accent-col);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  transition: 400ms;
+  background-color: var(--init-col);
+  color: var(--sec-col);
+  border-bottom: 1px solid var(--accent-col);
+}
+
+/****************************************************************************/
+/*                        HERO SECTION STYLING                              */
+/****************************************************************************/
+
+#hero {
+  position: relative;
+  color: var(--sec-col);
+}
+
+#hero img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#hero h1 {
+  position: absolute;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 70px;
+  top: 8%;
+  z-index: 5;
+}
+
+/****************************************************************************/
+/*                        MAIN SECTION STYLING                              */
+/****************************************************************************/
+
+section {
+  height: 51vh;
+  width: 90vw;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.pad-top-bot {
+  padding: 20px 0 5px;
+}
+
+.sec-title {
+  align-self: center;
+  color: var(--sec-col);
+}
+
+/*#########################*/
+/*      CARDS STYLING      */
+/*#########################*/
+
+.sec-content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.sub-sec {
+  height: 400px;
+  width: 300px;
+  border-radius: var(--bord-rad);
+  border: 1px dotted var(--accent-col);
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--sec-col);
+}
+
+.cs-txt {
+  color: var(--init-col);
+  background-color: var(--sec-col);
+  width: 98%;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+/*#########################*/
+/*      MEDIA STYLING      */
+/*#########################*/
+
+.media-img {
+  object-fit: cover;
+  width: calc(100% - (var(--bord-rad) * 2));
+  height: calc(100% - (var(--bord-rad) * 2));
+  border-radius: var(--bord-rad);
+  margin: var(--bord-rad);
+}
+
+/*#########################*/
+/*     CONTACT STYLING     */
+/*#########################*/
+
+#contact {
+  height: 75px;
+  flex-direction: row;
+  color: var(--sec-col);
+  background-color: var(--accent-col);
+  justify-content: space-around;
+  align-items: center;
+  border-radius: var(--bord-rad);
+}
+
+#contact a {
+  text-decoration: none;
+  color: var(--sec-col);
+  transition: 1s;
+}
+
+#contact a:hover {
+  color: var(--init-col);
+  font-size: 1.25rem;
+}
+
+/****************************************************************************/
+/*                           FOOTER STYLING                                 */
+/****************************************************************************/
+
+footer {
+  width: 90vw;
+  height: 100px;
+  margin: 0 auto 5px;
+  color: var(--sec-col);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/****************************************************************************/
+/*                              OTHER STYLING                               */
+/****************************************************************************/
+
+.txt-fnt {
+  font-family: var(--special-font);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
