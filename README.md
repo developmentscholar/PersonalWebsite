@@ -7,3 +7,9 @@ to-do:
 - add more media
 - add games I made page
 - more...
+
+to-finish:
+- add more stuff to Homepage
+
+done:
+- 
